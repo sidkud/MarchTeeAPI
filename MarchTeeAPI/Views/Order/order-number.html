@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>March Tee - Shop</title>
+		<meta name="viewport" content="width=1024" />
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+        <script type="text/javascript" src="js/rangeslider.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body class="padded">
+        <h3 class="order-message">March Tee Order Number</h3>
+        <h1 id="order-number">1111</h1>
+        <a id="order-generate" href="#" class="button">Next</a>
+        <pre class="prettyprint">
+            var generateOrderNumber = function(e){ 
+                var currentOrderNumber = parseInt(e.text(), 10) 
+                var endDigits  = currentOrderNumber % 100; /*get last 2 digits*/ 
+                var newOrderNumber = currentOrderNumber + 11; /*default increment value*/ 
+                if(endDigits > 90 && endDigits <= 99){ 
+                    $(e).text(newOrderNumber + 1); 
+                }; 
+                else{ 
+                    $(e).text(newOrderNumber); 
+                } 
+            }; 
+    
+        </pre>
+        <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

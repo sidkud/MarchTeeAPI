@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>March Tee - Order</title>
+		<meta name="viewport" content="width=1024" />
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+        <script type="text/javascript" src="js/rangeslider.min.js"></script>
+	</head>
+	<body>
+    <div class="wrapper">
+       <section class="message">
+					<div class="liking"></div>
+				 <h3><a class="twitter-col" href="#">Tweet</a> about it, <a class="fb-col" href="#">share</a> it and <a class="brand-col" href="#">buy</a> some more of it.</h3>
+			</section>
+			<section>
+            <h2>Order #1122</h2>
+            <ul class="tracking">
+                <li>27 Feb 2016 - Order placed</li>
+                <li>28 Feb 2016 - Ready to ship</li>
+								<li>28 Feb 2016 - Shipped with Blue Dart (Ref: <a href="#">43423</a>) </li>
+                <li class="active">1 Mar 2016 - Delivered to you!</li>
+            </ul>
+            <div class="shipping-details">
+                <p class="bold">Ashish Acharya</p>
+                <p>2nd Floor, Beta 2, Giga Space IT Park, Viman Nagar, Pune, India 411051</p>
+            </div>
+            <table class="order-details" style="width:400px">
+                <thead>
+                    <td>Tee | Size</td>
+                    <td>Qty.</td>
+                    <td class="numerals">Price</td> 
+                </thead>
+                <tr>
+                    <td>Heather Grey | S</td>
+                    <td>1</td>
+                    <td class="numerals">1299.00</td> 
+                </tr>
+                <tr>
+                    <td>Denim Blue | S</td>
+                    <td>1</td>
+                    <td class="numerals">1699.00</td> 
+                </tr>
+                <tr class="spacer"></tr>
+                <tr class="section-break">
+                    <td><a href="#">Get an Invoice</a></td>
+                    <td class="strong">Total</td>
+                    <td class="numerals strong">2998.00</td> 
+                </tr>
+            </table> 
+        </section>
+        <section>
+            <a id="issue" class="danger" href="#">Tee issues?</a>
+			<p class="footer">Need help? Write in at <a href="#" >support@marchtee.com</a></p>
+        </section>
+    </div>
+    <div id="issue-popup"> 
+        <a href="#" id="dismiss-popup"></a>
+        <div class="message">
+            <h2>Sorry about that</h2>
+            <p>We promise to make this quick and hassle-free.<br> Here's what you can do -</p>
+        </div>
+        <div class="user-option tabs row">
+            <div class="tab">
+                <input type="radio" id="exchange" name="user-option">
+                <label for="exchange">Exchange</label>
+                <div class="tab-content">
+                    <div id="exchange-form">
+                        <div class="order-summary row">
+                            <table class="items" style="width: 100%">
+                                <tr class="item">
+                                    <td>
+                                       <div class="thumb">
+                                            <img src="images/thumb-greytee.png"/>
+                                        </div>
+                                        <div class="description">
+                                            <p class="bold">Heather Grey | S</p>
+                                            <div class="dropdown">
+                                                <select class="exchange-option">
+                                                    <option value="no-exchange" selected>New size</option>
+                                                    <option disabled>----------------------------------</option>
+                                                    <option value="same-size">Size S (Current)</option>
+                                                    <option value="m">Size M</option>
+                                                    <option value="l">Size L</option>
+                                                    <option value="xl">Size XL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="thumb">
+                                            <img src="images/thumb-bluetee.png"/>
+                                        </div>
+                                        <div class="description">
+                                            <p class="bold">Denim Blue | S</p>
+                                            <div class="dropdown">
+                                                <select class="exchange-option">
+                                                    <option value="no-exchange" selected>New size</option>
+                                                    <option disabled>----------------------------------</option>
+                                                    <option value="same-size">Size S (Current)</option>
+                                                    <option value="m">Size M</option>
+                                                    <option value="l">Size L</option>
+                                                    <option value="xl">Size XL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <a id="exchange-button" href="order-exchanged.html" class="button big">Confirm this exchange</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="return" name="user-option">
+                <label for="return">Return</label>
+                <div class="tab-content">
+                    <div id="return-form">
+                        <div class="order-summary row">
+                            <table class="items" style="width: 100%">
+                                <tr class="item">
+                                    <td>
+                                       <div class="thumb">
+                                            <img src="images/thumb-greytee.png"/>
+                                        </div>
+                                        <div class="description">
+                                            <p class="bold">Heather Grey | S</p>
+                                            <a class="select-return button" href="#">This</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="thumb">
+                                            <img src="images/thumb-bluetee.png"/>
+                                        </div>
+                                        <div class="description">
+                                            <p class="bold">Denim Blue | S</p>
+                                            <a class="select-return button" href="#">This</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <a id="exchange-button" href="order-returned.html" class="button big">Confirm this return</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype HTML>
+<html>
+	<head>
+		<style>
+			html, body {
+				padding:0;
+				margin:0;
+				height:100%;
+				width:100%;
+			}
+			img {
+				width:1680px;
+                margin: 0 auto;
+    margin: 0 auto;
+    display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="@Url.Content("~/Content/images/grey.jpg")" alt="" usemap="#link">
+		<map name="link">
+            <area shape="rect" coords="0,0,182,96" alt="" href="@Url.Content("~/")">
+            <area shape="rect" coords="784,0,896,96" alt="" href="@Url.Content("~/black")">
+            <area shape="rect" coords="896,0,1008,96" alt="" href="@Url.Content("~/grey")">
+            <area shape="rect" coords="1211,587,1293,630" alt="" href="@Url.Content("~/CheckOut")">
+     	</map>
+	</body>
+</html>

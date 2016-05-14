@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>March Tee - Shop</title>
+		<meta name="viewport" content="width=1024" />
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+        <script type="text/javascript" src="js/rangeslider.min.js"></script>
+	</head>
+	<body>
+    <div class="wrapper-nopadding">
+    <header>
+        <a href="#" id="cart" class="button big">0</a>
+        <div id="cart-details" class="order-summary">
+            <table class="items" style="width: 100%">
+                <tr class=item>
+                    <td>
+					   <div class="thumb">
+				            <img src="images/thumb-greytee.png"/>
+						</div>
+						<div class="description">
+							<p class="bold">Heather Grey | S</p>
+							<div class="dropdown dropdown-small">
+                                <select>
+                                    <option value="1" selected>Qty 1</option>
+                                </select>
+                            </div>
+				        </div>
+                    </td>
+                    <td class="numerals">
+                        <p>1299.00</p>
+                    </td>
+                </tr>
+                <tr class=item>
+                    <td>
+						<div class="thumb">
+                            <img src="images/thumb-bluetee.png"/>
+						</div>
+						<div class="description">
+                            <p class="bold">Denim Blue | S</p>
+                        	<div class="dropdown dropdown-small">
+                                <select>
+                                    <option value="1" selected>Qty 1</option>
+                                </select>
+                        	</div>
+						</div>
+                    </td>
+                    <td class="numerals">
+                        <p>1699.00</p>
+                    </td>
+                </tr>
+                <tr class="spacer"></tr>
+                <tr>
+                    <td colspan="2" class="offer highlight">
+                        <p>🍺 if you take all three shades! <a href="">Yes please</a></p>
+                    </td>
+                </tr>
+                <tr class="spacer"></tr>
+                <tr class="grand">
+                    <td class="strong">Total</td>
+                    <td class="numerals strong">2998.00</td>
+                </tr>
+                <tr>
+                    <td><p class="small">Taxes @5% included</p></td>
+                    <td class="numerals"><a id="gift-code" class="right">Have a gift code?</a></td>
+                </tr>
+                <tr class="gift-code-form">
+                    <td colspan="2">
+                        <input type="text" placeholder="Enter code" autofocus/>
+                    </td>
+                </tr>
+            </table>
+            <a id="checkout" href="checkout.html" class="button big">Checkout</a>
+        </div>
+    </header>
+        
+    <div class="splash">
+        <div class="grey"></div>
+    </div>
+        
+    <div class="scoop centered">
+        <div class="tee-info centered-content row">
+            <div class="col-md-1">
+                <form class="" action="" method="get">
+                  <nav class="swatches">
+                    <a href="#" class="swatch selected" id="grey"></a>
+                    <a href="#" class="swatch" id="blue"></a>
+                    <a href="#" class="swatch" id="black"></a>
+                  </nav>
+                    <div class="tee-details">
+                    <h3 class="description">Made from a heathered grey yarn, this short sleeves is an essential work-wear</h3>
+                    <h3 class="price">&#8377;1500</h3>
+                    </div>
+                    <nav class="sizes">
+                        <a class="size" href="#">S</a>
+                        <a class="size" href="#">M</a>
+                        <a class="size" href="#">L</a>
+                        <a class="size" href="#">XL</a>
+                    </nav>
+                    <input type="submit" id="add-button" class="big" value="Add">
+                    <a id="pick-size" class="size-guide" href="#">Find your fit →</a>
+                </form>  
+            </div>  
+        </div>
+    </div>
+        
+    
+    <div id="size-picker"> 
+        <a href="#" id="dismiss-popup"></a>
+        <div class="size-picker">
+            <div class="height-picker">
+                <input
+                    type="range"
+                    min="48"                    // default 0
+                    max="84"                  // default 100
+                    value="68"                 // default min + (max-min)/2
+                    data-orientation="vertical" // default horizontal
+                >
+                <output class="height-result"></output>
+            </div>
+            <div class="weight-picker">
+                <input
+                    type="range"
+                    min="40"                    // default 0
+                    max="160"                  // default 100
+                    step="1"                   // default 1
+                    value="70"                 // default min + (max-min)/2
+                    data-orientation="horizontal" // default horizontal
+                >
+                <output class="weight-result"></output>
+            </div>
+            <div class="size-result">
+                <h1>M</h1>
+                <!--<p><span>M</span> for a more relaxed fit</p>-->
+            </div>
+        </div>
+        <div class="row">
+            <a id="popup-primary" href="#" class="primary button big">Select</a>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

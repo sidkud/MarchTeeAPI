@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>March Tee - Checkout</title>
+    <meta name="viewport" content="width=1024" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/CSS/normalize.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/CSS/style1.css")"/>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.12.1.min.js")" ></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        <a href="#" id="cart" class="button big active">2</a>
+        <div id="cart-details" class="order-summary">
+            <table class="items" style="width: 100%">
+                <tr class=item>
+                    <td>
+					   <div class="thumb">
+				            <img src="@Url.Content("~/Content/images/thumb-greytee.png")"/>
+						</div>
+						<div class="description">
+							<p class="bold">Heather Grey | S</p>
+							<div class="dropdown dropdown-small">
+                                <select>
+                                    <option value="1" selected>Qty 1</option>
+                                </select>
+                            </div>
+				        </div>
+                    </td>
+                    <td class="numerals">
+                        <p>1299.00</p>
+                    </td>
+                </tr>
+                <tr class=item>
+                    <td>
+						<div class="thumb">
+                            <img src="@Url.Content("~/Content/images/thumb-bluetee.png")"/>
+						</div>
+						<div class="description">
+                            <p class="bold">Denim Blue | S</p>
+                        	<div class="dropdown dropdown-small">
+                                <select>
+                                    <option value="1" selected>Qty 1</option>
+                                </select>
+                        	</div>
+						</div>
+                    </td>
+                    <td class="numerals">
+                        <p>1699.00</p>
+                    </td>
+                </tr>
+                <tr class="spacer"></tr>
+                <tr>
+                    <td colspan="2" class="offer highlight">
+                        <p>🍺 if you take all three shades! <a href="">Yes please</a></p>
+                    </td>
+                </tr>
+                <tr class="spacer"></tr>
+                <tr class="grand">
+                    <td class="strong">Total</td>
+                    <td class="numerals strong">2998.00</td>
+                </tr>
+                <tr>
+                    <td><p class="small">Taxes @@5% included</p></td>
+                    <td class="numerals"><a id="gift-code" class="right">Have a gift code?</a></td>
+                </tr>
+                <tr class="gift-code-form">
+                    <td colspan="2">
+                        <input type="text" placeholder="Enter code" autofocus/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </header>
+        <form class="mid checkout" action="order.html" method="get">
+        <section>
+                <h2>Your Details</h2>
+								<div class="row">
+                    <label for="">Full Name</label><br/>
+                    <input type="text" autofocus/>
+                    <aside><p>Hi!</p></aside>
+                </div>
+                <div class="row">
+                    <label for="">Email Address</label><br/>
+                    <input type="text"/>
+                </div>
+                <div class="row">
+                    <label for="">Phone Number</label><br/>
+                    <input type="text"/>
+                    <aside><a href="#">Just incase...</a></aside>
+                </div>
+            </section>
+        <section>
+                <h2>Shipping Info</h2>
+                <a class="right" id="ship-to">Send to a friend</a>
+                <div class="row" id="friend-name">
+                    <label for="">Friend's Name</label><br/>
+                    <input type="text"/>
+                </div>
+                <div class="row">
+                    <label for="">Address Line</label><br/>
+                    <input type="text"/>
+                </div>
+                <div class="row two-col">
+                    <div class="col">
+                        <label for="">City</label><br/>
+                        <div class="dropdown">
+                            <select>
+                                <option value="Select">Select</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Delhi">Delhi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="">Country</label><br/>
+                        <div class="dropdown">
+                            <select>
+                                <option value="India" selected>India</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="">Pincode</label><br/>
+                    <input type="text"/>
+										<aside><p>You’ll get it by <span class="bold ">Mar 1</span></p></aside>
+                </div>
+                <!--<div class="row">
+                    <div class="shipping-est highlight"><p>You’ll get your tees on <span class="bold ">1st March around noon</span></p>
+                    </div>
+                </div>-->
+            </section>
+        <!--<section>
+                <h2>Payment</h2>
+                <div class="row">
+                    <label for="">Credit Card Number</label><br/>
+                    <input type="text"/>
+										<aside><div class="mastercard"></div></aside>
+                </div>
+                <div class="row two-col">
+                    <div class="col">
+                        <label for="">Expires on</label><br/>
+                        <div class="two-col">
+                            <div class="dropdown col">
+                                <select>
+                                    <option value="mm" selected>mm</option>
+                                    <option value="mm">01</option>
+                                    <option value="mm">02</option>
+                                    <option value="mm">03</option>
+                                    <option value="mm">04</option>
+                                    <option value="mm">05</option>
+                                    <option value="mm">06</option>
+                                    <option value="mm">07</option>
+                                    <option value="mm">08</option>
+                                    <option value="mm">10</option>
+                                    <option value="mm">11</option>
+                                    <option value="mm">12</option>
+                                </select>
+                            </div>
+                            <div class="dropdown col">
+                                <select>
+                                    <option value="yy" selected>yy</option>
+                                    <option value="mm">17</option>
+                                    <option value="mm">18</option>
+                                    <option value="mm">19</option>
+                                    <option value="mm">20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="">CVV</label><br/>
+                        <input type="text"/>
+                    </div>
+                </div>
+            </section>-->
+        </form>
+        <section>
+                <div class="row">
+                <iframe id="payFrame" src="~/CCAvenue/dataFrom.htm" width="700" height="600" frameborder="0" scrolling="No" style="display: block; margin: 0 auto;"></iframe>
+
+                    <form action="/purchase" method="POST">
+                    <!-- Note that the amount is in paise = 50 INR -->
+                    @*<script
+                        src="https://checkout.razorpay.com/v1/checkout.js"
+                        data-key="rzp_test_3zzRVpWnsIa8ZK"
+                        data-amount="5000"
+                        data-method.wallet = false
+                        data-method.netbanking = false
+                        data-name="March Tee"
+                        data-buttontext="Pay with Razorpay"
+                        data-prefill.name="Harshil Mathur"
+                        data-prefill.email="support@razorpay.com"
+                        data-theme.color="#0099ff"
+                    ></script>*@
+                    <input type="hidden" value="Hidden Element" name="hidden">
+                    </form>
+                </div>
+            </section>
+    </div>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/main1.js")"></script>
+</body>
+</html>

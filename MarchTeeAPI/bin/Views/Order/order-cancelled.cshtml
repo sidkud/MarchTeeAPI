@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>March Tee - Order</title>
+    <meta name="viewport" content="width=1024" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/CSS/normalize.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/CSS/style1.css")"/>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.12.1.min.js")" ></script>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="message">
+						<div class="thankyou"></div>
+						<h3>Would you like to hear from us when we make new stuff? <a href="#">OK</a></h3>
+				</section>
+        <section>
+            <h2>Order #1122</h2>
+            <ul class="tracking">
+                <li class="active">27 Feb 2016 - Order placed</li>
+                <li class="expected">1 Mar 2016 - Expected Delivery</li>
+            </ul>
+            <div class="shipping-details">
+                <p class="bold">Ashish Acharya</p>
+                <p>2nd Floor, Beta 2, Giga Space IT Park, Viman Nagar, Pune, India 411051</p>
+                <a href="#">Change</a>
+            </div>
+            <table class="order-details" style="width:400px">
+                <thead>
+                    <td>Tee | Size</td>
+                    <td>Qty.</td>
+                    <td class="numerals">Price</td> 
+                </thead>
+                <tr>
+                    <td>Heather Grey | S</td>
+                    <td>1</td>
+                    <td class="numerals">1299.00</td> 
+                </tr>
+                <tr>
+                    <td>Denim Blue | S</td>
+                    <td>1</td>
+                    <td class="numerals">1699.00</td> 
+                </tr>
+                <tr class="spacer"></tr>
+                <tr class="section-break">
+                    <td><a href="#">Get an Invoice</a></td>
+                    <td class="strong">Total</td>
+                    <td class="numerals strong">2998.00</td> 
+                </tr>
+            </table> 
+        </section>
+        <section>
+            <a href="#" class="danger">Cancel order, oh no!</a>
+						<p class="footer">Need help? Write in at <a href="#" >support@marchtee.com</a></p>
+        </section>
+    </div>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/main1.js")"></script>
+</body>
+</html>
